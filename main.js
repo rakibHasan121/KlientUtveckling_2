@@ -141,21 +141,19 @@ form.addEventListener('submit', (e) => {
     if (name.value === '' || name.value == null) {
         messages.push('Name is required')
     }
+    if(tel.value)
     if (postnumber.value.length != 5) {
-        messages.push("Postnumber should have 5 numbers")
+        messages.push("Postnumber should be 5 digits")
     }
 
     if (messages.length > 0) {
         e.preventDefault();
         errorElement.innerText = messages.join(', ')
     }
-})
-
-$("#submitForm").click(function () {
-    if(messages.length = 0){
+    if(messages.length==0){
         alert("Tack.Din beställning är mottagen och hanteras inom kort.");
     }
-});
+})
 
 onLoadCartNumbers();
 displayCart();
