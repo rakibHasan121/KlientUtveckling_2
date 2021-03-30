@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+.navbar {
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: rgb(235, 199, 193);
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.cart ion-icon {
+    vertical-align: top;
+    font-size: 20px;
+    padding-right: 3px;
+}
+
+.products-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-header {
+    width: 150%;
+    max-width: 850px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin: 0 auto;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.product-title {
+    width: 54%;
+}
+
+.price {
+    width: 8%;
+}
+
+.quantity {
+    width: 12%;
+}
+
+.checkoutProducts {
+    width: 150%;
+    max-width: 850px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+}
+
+.product-img img {
+    width: 50px;
+}
+
+.product-img {
+    padding: 5px;
+}
+
+.product-name {
+    text-align: left;
+    padding: 25px;
+    width: 40%;
+    border-left: 1px solid rgb(181, 181, 181);
+    border-right: 1px solid rgb(181, 181, 181);
+}
+
+.product-price, .product-quantity {
+    margin: 25px 10px;
+    width: 7%;
+    text-align: center;
+}
+
+.totalINcart {
+    border-left: 1px solid rgb(181, 181, 181);
+    padding: 25px 15px;
+    text-align: center;
+    width: 22%;
+}
+
+.product-quantity ion-icon {
+    vertical-align: text-top;
+    font-size: 20px;
+}
+
+.trash {
+    margin: 25px 10px;
+}
+
+.totalContainer {
+    float: left;
+    text-align: right;
+    width: 80%;
+}
+
+.kundInfo {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-content: center;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+input {
+    width: 333px;
+    font-size: inherit;
+    padding: 0.2em;
+    margin: 0.1em 0.2em;
+}
+.orderConfirmed{
+    background-color: #1e90f4;
+    border: none;
+    outline: 0;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    opacity: 0.6;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 344px;
+    padding: 0.2em;
+    margin: 0.1em 0.2em;
+    font-size: 14px;
+}
+.orderConfirmed:hover {
+    opacity: 1
+}
+
+#error{
+    color: red;
+}
